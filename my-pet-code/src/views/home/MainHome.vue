@@ -7,13 +7,19 @@
       label="Cadastrar usuário"
       icon="pi pi-plus"
       iconPos="right"
+      @click="navigateToRegisterUser()"
     />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MainHome'
+  name: 'MainHome',
+  methods: {
+    navigateToRegisterUser() {
+      this.$router.push('/register/user')
+    }
+  }
 }
 </script>
 

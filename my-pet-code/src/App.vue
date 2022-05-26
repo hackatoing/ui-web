@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div>
-      My Pet Code Menu
-    </div>
+    <MenuBar class=""/>
     <div class="main-container">
       <router-view/>
     </div>
@@ -11,9 +9,12 @@
 
 <script>
 
+import MenuBar from '@/components/menu-bar/MenuBar'
+
 export default {
   name: 'App',
   components: {
+    MenuBar
   }
 }
 </script>
