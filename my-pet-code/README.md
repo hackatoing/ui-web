@@ -23,3 +23,15 @@ npm run build
 ```
 npm run lint
 ```
+
+ # Deploy
+
+ ### To build image
+ ```
+docker build -t my-pet-registry/my-pet-web-front .
+ ```
+
+ ### To run container
+ ```
+docker run -it -p 8080:80 --rm --name my-pet-code-front my-pet-registry/my-pet-web-front
+ ```
